@@ -5,6 +5,7 @@
  <link rel="stylesheet" href="flower4.css">
   <title> Закажите что-то свое</title>  
 </head> 
+  <body>
      <ul>
       <li> <a href="index.html">Главная</a></li>
       <li> <a href="flower3.html">Культура</a></li>
@@ -12,9 +13,499 @@
       <li> <a href="https://bouquetist.ru/shop/podpiska/abonement/?srsltid=AfmBOoqW0Cr5-UEY65ljbP-V62_EEHN4Kc-kM7AKj-AIaAsBadeRGnLA">Радость</a></li>
       <li> <a class="active" href="flower4.html">Покупка</a></li>
     </ul>
-<body>
-  <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top">      
+<li class="nav-item" style="margin-left:0!important; order: -1;">
+          <!-- Кнопка открытия offcanvas-корзины -->
+          <button
+            class="cart-button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+          >
+            <span class="cart-dot"></span>
+            <span>Корзина: <span id="cart-count">0</span></span>
+          </button>
+        </li>
+        </nav>
+
+<!-- ======== ОСНОВНОЙ КОНТЕНТ КАТАЛОГА ======== -->
+<main class="container my-3">
+  <header class="page-header">
+    <p class="page-kicker mb-2">Каталог</p>
+    <h1 class="page-title">Вырази свои чувства через цветы</h1>
+    <p class="page-subtitle">
+      Мы подобрали самые подходящие варианты для ваших букетов на самые важные случаи вашей жизни
+    </p>
+  </header>
+
+  <!-- Внутренняя навигация по разделам каталога -->
+  <nav class="page-nav mb-4">
+    <span class="page-kicker me-2" style="font-size:0.7rem;">Навигация:</span>
+    <a class="me-1" href="#section-small">Маленькие букеты</a>
+    <a class="me-1" href="#section-big">Большие букеты</a>
+    <a href="#top">К началу</a>
+  </nav>
+
+  <!-- Раздел 1: Популярные игры -->
+  <section id="section-small" class="mb-5">
+    <h2 class="section-title">Маленькие букеты</h2>
+    <p class="page-subtitle mb-3">
+      Эти маленькие радости помогут вам создать приятное воспоминание и порадовать близкого человека: родственника, друга, возлюбленного
+    </p>
+    <div id="product-grid" class="row g-4">
+      <!-- Карточки товаров добавятся сюда из JavaScript -->
+    </div>
+  </section>
+
+  <!-- Раздел 2: Семейные наборы -->
+  <section id="section-big" class="mb-4">
+    <h2 class="section-title">Большие букеты</h2>
+    <div class="row align-items-center g-3">
+      <div class="col-md-6">
+        <p class="page-subtitle">
+          Большие букеты - это не просто груда сваленных вместе цветов, а большое послание, которое хранит в себе множество важных деталей, которые захотели передать именно вы
+        </p>
+        <ul class="small-hint mb-2" style="list-style:none; padding-left:0;">
+          <li>• Помогаем вам выбрать подходящие по смыслу цветы</li>
+          <li>• Выбираем и собираем самые свежие бутоны на рынке</li>
+          <li>• Быстро доставляем к получателю</li>
+          <li>• Вкладываем эстетичную карточку с объясниями значений</li>
+        </ul>
+        <p class="page-subtitle mb-0">
+          В комментарии к заказу напишите шесть основных чувств, которые вы хотели бы передать получателю и мы свяжемся с вами для более пдробного выбора подходящих цветов
+        </p>
+      </div>
+      <div class="col-md-6">
+        <figure class="mb-0">
+          <img src="https://i.pinimg.com/1200x/e3/b9/c8/e3b9c82b1cfba0282fc5e08e74b859cd.jpg"
+               alt="happy people with flowers"
+               class="img-fluid rounded-4 shadow-sm">
+          <figcaption class="mt-2" style="font-size:0.8rem;color:var(--text-muted);">
+            Подарок, который запомниться надолго
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Кнопка «к началу» и быстрый доступ к корзине -->
+  <div class="d-flex justify-content-between align-items-center mt-3">
+    <a href="#top" class="btn-ghost-link">К началу страницы</a>
+    <button
+      class="btn-minimal"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#cartOffcanvas"
+      aria-controls="cartOffcanvas"
+    >
+      Открыть корзину
+    </button>
+  </div>
+</main>
+
+<!-- ======== ФУТЕР ======== -->
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-2">
+    <div>
+      <div class="page-kicker mb-1">flower-book</div>
+      <div>Цветочный магазин со значением</div>
+      <div>Если сложно найти подходящие слова, мы с легкостью подберем подходящие цветы</div>
+    </div>
+    <div class="footer-right">
+      <span>email: flowerbook@gmail.com</span>
+      <a href="about.html">О магазине</a>
+      <a href="order.html">Помощь с заказом</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ======== OFFCANVAS: КОРЗИНА + ФОРМА ЗАКАЗА ======== -->
+<div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+  <div class="offcanvas-header">
+    <div>
+      <h5 class="offcanvas-title" id="cartOffcanvasLabel">Корзина</h5>
+      <p class="small-hint mb-0">
+        Здесь собраны выбранные вами букеты. Проверьте состав, при необходимости
+        отредактируйте количество и заполните форму ниже.
+      </p>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <!-- Список товаров в корзине заполняется JS -->
+    <div id="cart-items"></div>
+
+    <div class="mt-2 mb-3 cart-summary">
+      <div class="d-flex justify-content-between">
+        <span>Всего позиций:</span>
+        <span id="cart-items-count">0</span>
+      </div>
+      <div class="d-flex justify-content-between">
+        <span>Сумма заказа:</span>
+        <span id="cart-total">0 ₽</span>
+      </div>
+    </div>
+
+    <!-- Форма заказа внутри offcanvas (минимальная, но рабочая) -->
+    <form
+      id="cart-order-form"
+      class="mt-auto"
+      action="https://httpbin.org/post"
+      method="post"
+    >
+      <!-- В это поле перед отправкой положим JSON‑корзину -->
+      <input type="hidden" name="cart_json" id="cart-json">
+
+      <div class="mb-2">
+        <label for="customerName" class="form-label">Имя и фамилия *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="customerName"
+          name="customer_name"
+          placeholder="Например, Анна Смирнова"
+          required
+        >
+      </div>
+
+      <div class="mb-2">
+        <label for="customerEmail" class="form-label">Электронная почта *</label>
+        <input
+          type="email"
+          class="form-control"
+          id="customerEmail"
+          name="customer_email"
+          placeholder="example@mail.ru"
+          required
+        >
+      </div>
+
+      <div class="mb-2">
+        <label for="customerPhone" class="form-label">Телефон *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="customerPhone"
+          name="customer_phone"
+          placeholder="+7 900 000-00-00"
+          required
+        >
+      </div>
+
+      <fieldset class="mb-2">
+        <legend class="form-label mb-1" style="font-size:0.86rem;">Способ доставки *</legend>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="delivery_type"
+            id="deliveryPickup"
+            value="pickup"
+            required
+          >
+          <label class="form-check-label" for="deliveryPickup">
+            Самовывоз из магазина
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="delivery_type"
+            id="deliveryCourier"
+            value="courier"
+          >
+          <label class="form-check-label" for="deliveryCourier">
+            Курьер по городу
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="delivery_type"
+            id="deliveryPost"
+            value="post"
+          >
+          <label class="form-check-label" for="deliveryPost">
+            Доставка почтой
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="mb-2">
+        <label for="deliveryAddress" class="form-label">
+          Адрес доставки (если выбрана доставка)
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="deliveryAddress"
+          name="delivery_address"
+          placeholder="Город, улица, дом, квартира"
+        >
+      </div>
+
+      <div class="mb-3">
+        <label for="customerComment" class="form-label">Комментарий к заказу</label>
+        <textarea
+          class="form-control"
+          id="customerComment"
+          name="customer_comment"
+          rows="3"
+          placeholder="Напишите, для кого вы выбираете букет — это поможет нам лучше вас проконсультировать"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary-min w-100">
+        Оформить заказ
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Шаблон карточки товара, который клонируется в JS -->
+<template id="product-template">
+  <div class="col-sm-6 col-lg-4 col-xl-3">
+    <article class="card h-100 product-card">
+      <img class="card-img-top product-image" src="" alt="">
+      <div class="card-body d-flex flex-column">
+        <h3 class="product-title"></h3>
+        <p class="product-description"></p>
+        <p class="fw-semibold mb-3">
+          Цена: <span class="product-price"></span> ₽
+        </p>
+        <button type="button" class="btn-minimal mt-auto add-to-cart">
+          В корзину
+        </button>
+      </div>
+    </article>
+  </div>
+</template>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  /* ========= ДАННЫЕ ТОВАРОВ ========= */
+  const products = [
+    {
+      id: 'blue-white',
+      title: 'Букет ромашек и гортензий',
+      description: 'Гармония ромашек означающих первую влюбленность и голубых гортензий, символизирующих глубину чувств идеально подойдет для первого свидания',
+      price: 1200,
+      image: "https://i.pinimg.com/1200x/9c/9b/35/9c9b35f839c33630f615b938027e3928.jpg"
+    },
+    {
+      id: 'pink-white',
+      title: 'Букет роз и гипсофил',
+      description: 'Дуэт розовых роз, показывающих нежность и восхищение идеально совпадает с белыми гипсофилами означающих начало новой жизни. Идеально для подарка другу на важное для него событие ',
+      price: 2100,
+      image: 'https://i.pinimg.com/736x/42/3e/1d/423e1d6bcfd306cb308d8b9894cae2ac.jpg'
+    },
+    {
+      id: 'white-purple',
+      title: 'Букет незабудок и колокольчиков',
+      description: 'Пара колокольчиков и незабудок означающих искренние чувства и верность подходит для встречи перед долгой разлукой',
+      price: 1400,
+      image: 'https://i.pinimg.com/1200x/d4/43/36/d443366eab5220cef7d6eb392bf7172e.jpg'
+    },
+    {
+      id: 'pink-green',
+      title: 'Букет гербер и тюльпанов',
+      description: 'Нежность и благодарность - чувства, которые транслирует этот букет. Если вы ищете подарок близким друзьям, то это для вас',
+      price: 2100,
+      image: 'https://i.pinimg.com/736x/fb/f1/0c/fbf10ca8b0807c8f1060b88e871e2a75.jpg'
+    },
+    {
+      id: 'pink-purple',
+      title: 'Букет гвоздик и восковых цветов',
+      description: 'Вечная любовь и благодарность, если это не идеальное сочетание для подарка маме, то тогда что?',
+      price: 2500,
+      image: 'https://i.pinimg.com/736x/db/de/8b/dbde8b4ded3d534a09c5d95221b39864.jpg'
+    },
+    {
+      id: 'purple-white',
+      title: 'Букет гиоцинтов и пионов',
+      description: 'Чистота, честь и достоинство - то что надо, для маленького подарка коллеге',
+      price: 1900,
+      image: 'https://i.pinimg.com/1200x/bf/1d/2a/bf1d2a92959d77443c2da58ecb245f00.jpg'
+    },
+    {
+      id: 'yellow',
+      title: 'Букет подсолнухов и боронии',
+      description: 'В день рождение мы всегда задумываемся о чем-то счастливом. Этот букет показывает все количество счастья, радости и долголетия, которые вы хотите передать именинику',
+      price: 3900,
+      image: 'https://i.pinimg.com/736x/6b/58/50/6b585015df0869a9efec1a75d9306924.jpg'
+    },
+    {
+      id: 'white-yellow',
+      title: 'Букет мимозы и белых роз',
+      description: 'Если нужно найти что-то что подойдет вашим маленьким родственникам - то чистота и невиность - очень хороший вариант',
+      price: 3100,
+      image: 'https://i.pinimg.com/1200x/13/49/f4/1349f4d3ed2a5d8f5c46d3e17c497c2c.jpg'
+    }
+  ];
+
+  // Быстрый доступ к товарам по id: productMap['catan'] -> объект игры
+  const productMap = Object.fromEntries(products.map(p => [p.id, p]));
+
+  /* ========= КОРЗИНА В localStorage ========= */
+  const CART_KEY = 'boardgame_cart';
+  let cart = {};
+
+  // Читаем корзину из localStorage
+  function loadCart() {
+    try {
+      const raw = localStorage.getItem(CART_KEY);
+      if (raw) {
+        cart = JSON.parse(raw);
+      }
+    } catch (e) {
+      cart = {};
+    }
+    updateCartUI();
+  }
+
+  // Сохраняем корзину в localStorage
+  function saveCart() {
+    localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    updateCartUI();
+  }
+
+  // Добавляем товар в корзину
+  function addToCart(productId) {
+    if (!cart[productId]) {
+      cart[productId] = 0;
+    }
+    cart[productId] += 1;
+    saveCart();
+  }
+
+  // Меняем количество товара в корзине
+  function changeQty(productId, newQty) {
+    const qty = Math.max(0, parseInt(newQty, 10) || 0);
+    if (qty === 0) {
+      delete cart[productId];
+    } else {
+      cart[productId] = qty;
+    }
+    saveCart();
+  }
+
+  // Удаляем товар из корзины
+  function removeFromCart(productId) {
+    delete cart[productId];
+    saveCart();
+  }
+
+  // Общее количество единиц товара в корзине
+  function getCartItemsCount() {
+    return Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+  }
+
+  // Итоговая сумма корзины
+  function getCartTotal() {
+    let total = 0;
+    for (const [id, qty] of Object.entries(cart)) {
+      const p = productMap[id];
+      if (p) {
+        total += p.price * qty;
+      }
+    }
+    return total;
+  }
+
+  // Обновляем отображение корзины (шапка + offcanvas)
+  function updateCartUI() {
+    const countEl = document.getElementById('cart-count');
+    const itemsEl = document.getElementById('cart-items');
+    const totalEl = document.getElementById('cart-total');
+    const itemsCountEl = document.getElementById('cart-items-count');
+
+    if (countEl) countEl.textContent = getCartItemsCount();
+    if (totalEl) totalEl.textContent = getCartTotal() + ' ₽';
+
+    if (!itemsEl) return;
+    itemsEl.innerHTML = '';
+
+    const entries = Object.entries(cart);
+    if (entries.length === 0) {
+      itemsEl.innerHTML = '<p class="small-hint mb-2">Корзина пуста. Добавьте игры из каталога.</p>';
+      if (itemsCountEl) itemsCountEl.textContent = '0';
+      return;
+    }
+
+    if (itemsCountEl) itemsCountEl.textContent = entries.length.toString();
+
+    entries.forEach(([id, qty]) => {
+      const p = productMap[id];
+      if (!p) return;
+
+      const row = document.createElement('div');
+      row.className = 'cart-item d-flex align-items-center justify-content-between gap-2';
+
+      row.innerHTML = `
+        <div class="flex-grow-1">
+          <div class="cart-item-title">${p.title}</div>
+          <div class="small-hint">Цена: ${p.price} ₽</div>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="number" min="0" class="form-control cart-qty-input" value="${qty}">
+          <button type="button" class="btn btn-sm btn-outline-secondary border-0 text-muted remove-btn">×</button>
+        </div>
+      `;
+
+      const qtyInput = row.querySelector('input');
+      qtyInput.addEventListener('change', () => changeQty(id, qtyInput.value));
+
+      const removeBtn = row.querySelector('.remove-btn');
+      removeBtn.addEventListener('click', () => removeFromCart(id));
+
+      itemsEl.appendChild(row);
+    });
+  }
+
+  // Отрисовываем карточки товаров в каталоге
+  const template = document.getElementById('product-template');
+  const grid = document.getElementById('product-grid');
+
+  products.forEach(game => {
+    const clone = template.content.cloneNode(true);
+    clone.querySelector('.product-title').textContent = game.title;
+    clone.querySelector('.product-description').textContent = game.description;
+    clone.querySelector('.product-price').textContent = game.price.toString();
+    const img = clone.querySelector('.product-image');
+    img.src = game.image;
+    img.alt = game.title;
+
+    const btn = clone.querySelector('.add-to-cart');
+    btn.dataset.productId = game.id;
+    btn.addEventListener('click', () => {
+      addToCart(game.id);
+      btn.textContent = 'В корзине';
+      setTimeout(() => (btn.textContent = 'В корзину'), 1200);
+    });
+    grid.appendChild(clone);
+  });
+
+  // Перед отправкой формы прикладываем JSON‑корзины
+  const orderForm = document.getElementById('cart-order-form');
+  if (orderForm) {
+    orderForm.addEventListener('submit', () => {
+      const hidden = document.getElementById('cart-json');
+      if (hidden) {
+        hidden.value = JSON.stringify(cart);
+      }
+    });
+  }
+
+  // Инициализация корзины при загрузке страницы
+  loadCart();
+</script>
 </body>
+
 
 </html>
